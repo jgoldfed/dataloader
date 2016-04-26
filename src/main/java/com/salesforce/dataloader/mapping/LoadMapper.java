@@ -77,7 +77,7 @@ public class LoadMapper extends Mapper {
             if (StringUtils.hasText(sfdcName)) {
                 mappedData.put(sfdcName, entry.getValue());
             } else {
-                logger.info("Mapping for field " + entry.getKey() + " will be ignored since destination column is empty");
+                //logger.info("Mapping for field " + entry.getKey() + " will be ignored since destination column is empty");
             }
         }
         mapConstants(mappedData);
