@@ -239,7 +239,7 @@ public class BulkLoadVisitor extends DAOLoadVisitor {
             // if the column is not mapped, don't send it
             if (sfdcColumn == null || sfdcColumn.length() == 0) {
                 // TODO: we should make it more obvious to users when we omit a column
-                getLogger().warn("Cannot find mapping for column: " + userColumn + ".  Omitting column");
+               // getLogger().warn("Cannot find mapping for column: " + userColumn + ".  Omitting column");
                 continue;
             }
             // TODO we don't really need to be this strict about a delete CSV file.. as long as the IDS are there
